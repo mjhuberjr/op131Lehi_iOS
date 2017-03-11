@@ -29,6 +29,8 @@ private extension AppDelegate {
         let main = Main.initializeFromStoryboard()
         window?.rootViewController = main
         window?.makeKeyAndVisible()
+        
+        AppearanceService.customize()
     }
     
 }

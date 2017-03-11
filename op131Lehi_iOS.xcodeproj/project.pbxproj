@@ -13,6 +13,9 @@
 		5E7339B91E74B26200C8A44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7339B71E74B26200C8A44A /* LaunchScreen.storyboard */; };
 		5E7339C51E74BAED00C8A44A /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7339C41E74BAED00C8A44A /* Main.swift */; };
 		5E7339CA1E74BC3100C8A44A /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7339C91E74BC3100C8A44A /* StoryboardInitializable.swift */; };
+		5E7339CD1E74C42F00C8A44A /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7339CC1E74C42F00C8A44A /* SettingsService.swift */; };
+		5E7339CF1E74C43D00C8A44A /* AppearanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7339CE1E74C43D00C8A44A /* AppearanceService.swift */; };
+		5E7339D11E74C51D00C8A44A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7339D01E74C51D00C8A44A /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		5E7339BA1E74B26200C8A44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E7339C41E74BAED00C8A44A /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		5E7339C91E74BC3100C8A44A /* StoryboardInitializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
+		5E7339CC1E74C42F00C8A44A /* SettingsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
+		5E7339CE1E74C43D00C8A44A /* AppearanceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceService.swift; sourceTree = "<group>"; };
+		5E7339D01E74C51D00C8A44A /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			children = (
 				5E7339AE1E74B26200C8A44A /* AppDelegate.swift */,
 				5E7339C11E74B50D00C8A44A /* UI */,
+				5E7339CB1E74C40800C8A44A /* Services */,
 				5E7339C61E74BBF700C8A44A /* Infrastructure */,
 				5E7339C01E74B27500C8A44A /* Resources */,
 			);
@@ -119,8 +126,18 @@
 		5E7339C81E74BC1900C8A44A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5E7339D01E74C51D00C8A44A /* UIColor+Extension.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		5E7339CB1E74C40800C8A44A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5E7339CE1E74C43D00C8A44A /* AppearanceService.swift */,
+				5E7339CC1E74C42F00C8A44A /* SettingsService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +214,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E7339C51E74BAED00C8A44A /* Main.swift in Sources */,
+				5E7339CF1E74C43D00C8A44A /* AppearanceService.swift in Sources */,
 				5E7339AF1E74B26200C8A44A /* AppDelegate.swift in Sources */,
+				5E7339D11E74C51D00C8A44A /* UIColor+Extension.swift in Sources */,
+				5E7339CD1E74C42F00C8A44A /* SettingsService.swift in Sources */,
 				5E7339CA1E74BC3100C8A44A /* StoryboardInitializable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
