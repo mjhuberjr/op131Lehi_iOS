@@ -14,14 +14,30 @@ final class Main: UIViewController, StoryboardInitializable {
 
     fileprivate lazy var loading = UINavigationController(rootViewController: Loading.initializeFromStoryboard())
     fileprivate lazy var mainApp = MainApp.initializeFromStoryboard()
-    fileprivate lazy var login = Login.initializeFromStoryboard()
+    fileprivate lazy var login = UINavigationController(rootViewController:Login.initializeFromStoryboard())
 
     // MARK: - Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        //
+    }
 
 }
 
 // MARK: - Private methods
 
 extension Main {
-
+    func showLoading() {
+        
+    }
+    
+    func showMainApp() {
+        
+    }
+    
+    func showLogin() {
+        
+    }
 }

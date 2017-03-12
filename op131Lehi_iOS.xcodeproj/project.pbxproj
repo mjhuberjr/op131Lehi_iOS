@@ -24,6 +24,8 @@
 		5E7339E21E74CD9E00C8A44A /* MainApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7339E11E74CD9E00C8A44A /* MainApp.storyboard */; };
 		5E7339E41E74CDED00C8A44A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7339E31E74CDED00C8A44A /* Login.storyboard */; };
 		5E7339E61E74CDF800C8A44A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7339E51E74CDF800C8A44A /* Login.swift */; };
+		5E7339EA1E74CFFF00C8A44A /* CreateProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7339E91E74CFFF00C8A44A /* CreateProfile.swift */; };
+		5E7339EC1E74D00B00C8A44A /* CreateProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7339EB1E74D00B00C8A44A /* CreateProfile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		5E7339E11E74CD9E00C8A44A /* MainApp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainApp.storyboard; sourceTree = "<group>"; };
 		5E7339E31E74CDED00C8A44A /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		5E7339E51E74CDF800C8A44A /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		5E7339E91E74CFFF00C8A44A /* CreateProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfile.swift; sourceTree = "<group>"; };
+		5E7339EB1E74D00B00C8A44A /* CreateProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateProfile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +85,6 @@
 		5E7339AD1E74B26200C8A44A /* op131Lehi_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				5E7339D41E74C8CD00C8A44A /* New Group */,
 				5E7339AE1E74B26200C8A44A /* AppDelegate.swift */,
 				5E7339C11E74B50D00C8A44A /* UI */,
 				5E7339CB1E74C40800C8A44A /* Services */,
@@ -105,6 +108,8 @@
 			children = (
 				5E7339C31E74BAB500C8A44A /* Launch */,
 				5E7339C21E74BAAC00C8A44A /* Main */,
+				5E7339E71E74CEBD00C8A44A /* Messages */,
+				5E7339E81E74CEDB00C8A44A /* Profile */,
 				5E7339DE1E74CD8400C8A44A /* Login */,
 			);
 			name = UI;
@@ -165,13 +170,6 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
-		5E7339D41E74C8CD00C8A44A /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
-			sourceTree = "<group>";
-		};
 		5E7339D91E74C93200C8A44A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,8 +184,24 @@
 			children = (
 				5E7339E31E74CDED00C8A44A /* Login.storyboard */,
 				5E7339E51E74CDF800C8A44A /* Login.swift */,
+				5E7339EB1E74D00B00C8A44A /* CreateProfile.storyboard */,
+				5E7339E91E74CFFF00C8A44A /* CreateProfile.swift */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		5E7339E71E74CEBD00C8A44A /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
+		5E7339E81E74CEDB00C8A44A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +272,7 @@
 				5E7339B61E74B26200C8A44A /* Assets.xcassets in Resources */,
 				5E7339B41E74B26200C8A44A /* Main.storyboard in Resources */,
 				5E7339DB1E74CCA500C8A44A /* Loading.storyboard in Resources */,
+				5E7339EC1E74D00B00C8A44A /* CreateProfile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +317,7 @@
 				5E7339AF1E74B26200C8A44A /* AppDelegate.swift in Sources */,
 				5E7339D11E74C51D00C8A44A /* UIColor+Extension.swift in Sources */,
 				5E7339DD1E74CCDA00C8A44A /* Loading.swift in Sources */,
+				5E7339EA1E74CFFF00C8A44A /* CreateProfile.swift in Sources */,
 				5E7339CD1E74C42F00C8A44A /* SettingsService.swift in Sources */,
 				5E7339E61E74CDF800C8A44A /* Login.swift in Sources */,
 				5E7339E01E74CD9600C8A44A /* MainApp.swift in Sources */,
