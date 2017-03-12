@@ -9,18 +9,18 @@
 import Foundation
 
 final class SettingsService {
-    
+
     var userAuthKey: String? {
         // TODO: Return NSUserDefaults
         return ""
     }
-    
+
     var userLoggedIn: Bool {
        return userAuthKey != nil
     }
-    
+
     func accountLoggedIn(withAuthKey: String) {
         // TODO: Store vapor-auth key in NSUserDefaults
     }
-    
+
 }

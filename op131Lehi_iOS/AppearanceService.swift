@@ -9,9 +9,9 @@
 import UIKit
 
 enum AppearanceService {
-    
+
     static func customize() {
         UIApplication.shared.delegate?.window??.tintColor = UIColor.customOrange()
     }
-    
+
 }

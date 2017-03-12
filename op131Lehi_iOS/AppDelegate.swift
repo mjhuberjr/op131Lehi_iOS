@@ -15,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Fabric.with([Crashlytics.self])
 
         loadMain()
@@ -27,15 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // MARK: - Private Methods
 
 private extension AppDelegate {
-    
     func loadMain() {
         window = UIWindow(frame: UIScreen.main.bounds)
         let main = Main.initializeFromStoryboard()
         window?.rootViewController = main
         window?.makeKeyAndVisible()
-        
+
         AppearanceService.customize()
     }
-    
 }
-
