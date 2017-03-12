@@ -10,6 +10,8 @@ import Foundation
 
 final class SettingsService {
 
+    static let shared = SettingsService()
+
     var userAuthKey: String? {
         // TODO: Return NSUserDefaults
         return ""
