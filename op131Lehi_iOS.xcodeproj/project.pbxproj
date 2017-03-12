@@ -16,6 +16,8 @@
 		5E7339CD1E74C42F00C8A44A /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7339CC1E74C42F00C8A44A /* SettingsService.swift */; };
 		5E7339CF1E74C43D00C8A44A /* AppearanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7339CE1E74C43D00C8A44A /* AppearanceService.swift */; };
 		5E7339D11E74C51D00C8A44A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7339D01E74C51D00C8A44A /* UIColor+Extension.swift */; };
+		5E7339D71E74C8F800C8A44A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7339D51E74C8F800C8A44A /* Fabric.framework */; };
+		5E7339D81E74C8F800C8A44A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7339D61E74C8F800C8A44A /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		5E7339CC1E74C42F00C8A44A /* SettingsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
 		5E7339CE1E74C43D00C8A44A /* AppearanceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceService.swift; sourceTree = "<group>"; };
 		5E7339D01E74C51D00C8A44A /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		5E7339D51E74C8F800C8A44A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		5E7339D61E74C8F800C8A44A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7339D81E74C8F800C8A44A /* Crashlytics.framework in Frameworks */,
+				5E7339D71E74C8F800C8A44A /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				5E7339AD1E74B26200C8A44A /* op131Lehi_iOS */,
+				5E7339D91E74C93200C8A44A /* Frameworks */,
 				5E7339AC1E74B26200C8A44A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +69,7 @@
 		5E7339AD1E74B26200C8A44A /* op131Lehi_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5E7339D41E74C8CD00C8A44A /* New Group */,
 				5E7339AE1E74B26200C8A44A /* AppDelegate.swift */,
 				5E7339C11E74B50D00C8A44A /* UI */,
 				5E7339CB1E74C40800C8A44A /* Services */,
@@ -140,6 +148,22 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		5E7339D41E74C8CD00C8A44A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		5E7339D91E74C93200C8A44A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E7339D51E74C8F800C8A44A /* Fabric.framework */,
+				5E7339D61E74C8F800C8A44A /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +175,7 @@
 				5E7339A81E74B26200C8A44A /* Frameworks */,
 				5E7339A91E74B26200C8A44A /* Resources */,
 				5E7339D21E74C84900C8A44A /* ShellScript */,
+				5E7339D31E74C89B00C8A44A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -222,6 +247,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		5E7339D31E74C89B00C8A44A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run c64620565af19666765df52bab1cf38ccc239bdb f07398944a8a9da60d7d89919a338f84d03bb98ae7764cd59c8167259d3a4678";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -359,6 +397,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L26E58LG2M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = op131Lehi_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.op131.op131Lehi-iOS";
@@ -372,6 +414,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L26E58LG2M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = op131Lehi_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.op131.op131Lehi-iOS";
