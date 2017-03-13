@@ -11,6 +11,9 @@
 		5E1E10721E75FCF000D12671 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E10711E75FCF000D12671 /* Endpoint.swift */; };
 		5E1E10741E76575D00D12671 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E10731E76575D00D12671 /* Result.swift */; };
 		5E1E10761E765C2700D12671 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E10751E765C2700D12671 /* JSONDecodable.swift */; };
+		5E1E107A1E765EF500D12671 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E10791E765EF500D12671 /* Profile.swift */; };
+		5E1E107C1E765F0000D12671 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E107B1E765F0000D12671 /* Message.swift */; };
+		5E1E107E1E765F2600D12671 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E107D1E765F2600D12671 /* Endpoints.swift */; };
 		5E7339AF1E74B26200C8A44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7339AE1E74B26200C8A44A /* AppDelegate.swift */; };
 		5E7339B41E74B26200C8A44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7339B21E74B26200C8A44A /* Main.storyboard */; };
 		5E7339B61E74B26200C8A44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7339B51E74B26200C8A44A /* Assets.xcassets */; };
@@ -37,6 +40,9 @@
 		5E1E10711E75FCF000D12671 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		5E1E10731E76575D00D12671 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		5E1E10751E765C2700D12671 /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
+		5E1E10791E765EF500D12671 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		5E1E107B1E765F0000D12671 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5E1E107D1E765F2600D12671 /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		5E7339AB1E74B26200C8A44A /* op131Lehi_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = op131Lehi_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7339AE1E74B26200C8A44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E7339B31E74B26200C8A44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +90,23 @@
 			name = NetworkStack;
 			sourceTree = "<group>";
 		};
+		5E1E10771E765E9C00D12671 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5E1E10791E765EF500D12671 /* Profile.swift */,
+				5E1E107B1E765F0000D12671 /* Message.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		5E1E10781E765EBA00D12671 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				5E1E107D1E765F2600D12671 /* Endpoints.swift */,
+			);
+			name = Endpoints;
+			sourceTree = "<group>";
+		};
 		5E7339A21E74B26200C8A44A = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +130,8 @@
 				5E7339AE1E74B26200C8A44A /* AppDelegate.swift */,
 				5E7339C11E74B50D00C8A44A /* UI */,
 				5E7339CB1E74C40800C8A44A /* Services */,
+				5E1E10771E765E9C00D12671 /* Data */,
+				5E1E10781E765EBA00D12671 /* Endpoints */,
 				5E7339C61E74BBF700C8A44A /* Infrastructure */,
 				5E7339C01E74B27500C8A44A /* Resources */,
 			);
@@ -333,10 +358,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E7339C51E74BAED00C8A44A /* Main.swift in Sources */,
+				5E1E107A1E765EF500D12671 /* Profile.swift in Sources */,
 				5E1E10741E76575D00D12671 /* Result.swift in Sources */,
 				5E7339CF1E74C43D00C8A44A /* AppearanceService.swift in Sources */,
 				5E7339AF1E74B26200C8A44A /* AppDelegate.swift in Sources */,
 				5E7339D11E74C51D00C8A44A /* UIColor+Extension.swift in Sources */,
+				5E1E107E1E765F2600D12671 /* Endpoints.swift in Sources */,
 				5E7339DD1E74CCDA00C8A44A /* Loading.swift in Sources */,
 				5E1E10701E75EEA900D12671 /* Network.swift in Sources */,
 				5E7339EA1E74CFFF00C8A44A /* CreateProfile.swift in Sources */,
@@ -344,6 +371,7 @@
 				5E1E10761E765C2700D12671 /* JSONDecodable.swift in Sources */,
 				5E7339E61E74CDF800C8A44A /* Login.swift in Sources */,
 				5E7339E01E74CD9600C8A44A /* MainApp.swift in Sources */,
+				5E1E107C1E765F0000D12671 /* Message.swift in Sources */,
 				5E1E10721E75FCF000D12671 /* Endpoint.swift in Sources */,
 				5E7339CA1E74BC3100C8A44A /* StoryboardInitializable.swift in Sources */,
 			);

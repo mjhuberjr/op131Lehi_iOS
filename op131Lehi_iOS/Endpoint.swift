@@ -11,11 +11,12 @@ import Foundation
 protocol Endpoint {
     var baseURL: String { get }
     var path: String { get }
-    var parameters: [String: Any] { get }
+    var parameters: [String: Any]? { get }
 }
 
 extension Endpoint {
-    var queryComponents: [NSURLQueryItem] {
+    var queryComponents: [NSURLQueryItem]? {
+        guard let parameters = parameters else { return nil }
         var components = [NSURLQueryItem]()
 
         for (key, value) in parameters {
