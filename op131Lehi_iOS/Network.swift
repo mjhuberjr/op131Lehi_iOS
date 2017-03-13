@@ -8,17 +8,18 @@
 
 import Foundation
 
+enum RequestType: String {
+    case get = "GET"
+    case put = "PUT"
+    case post = "POST"
+    case patch = "PATCH"
+    case delete = "DELETE"
+}
+
 class NetworkController {
-    enum HTTPMethod: String {
-        case get = "GET"
-        case put = "PUT"
-        case post = "POST"
-        case patch = "PATCH"
-        case delete = "DELETE"
-    }
 
     static func performRequest(for url: URL,
-                               httpMethod: HTTPMethod,
+                               httpMethod: RequestType,
                                urlParameters: [String: String]? = nil,
                                body: Data? = nil,
                                completion: ((Data?, Error?) -> Void)? = nil) {

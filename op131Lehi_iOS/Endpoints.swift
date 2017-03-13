@@ -44,6 +44,13 @@ enum Endpoints: Endpoint {
             }
         }
 
+        var requestType: RequestType {
+            switch self {
+            case .logout, .messages: return .get
+            case .register, .login, .update: return .post
+            }
+        }
+
     }
 
     // MARK: - Messages Endpoint
@@ -76,6 +83,15 @@ enum Endpoints: Endpoint {
             case .fetchAll, .post, .update, .delete: return nil
             }
         }
+
+        var requestType: RequestType {
+            switch self {
+            case .fetch, .fetchAll: return .get
+            case .post, .update: return .post
+            case .delete: return .delete
+            }
+        }
+
     }
 
     // MARK: - Endpoints Endpoint
@@ -104,6 +120,15 @@ enum Endpoints: Endpoint {
             return endpoint.parameters
         case .Messages(let endpoint):
             return endpoint.parameters
+        }
+    }
+
+    var requestType: RequestType {
+        switch self {
+        case .Users(let endpoint):
+            return endpoint.requestType
+        case .Messages(let endpoint):
+            return endpoint.requestType
         }
     }
 

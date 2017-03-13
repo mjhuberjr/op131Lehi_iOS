@@ -12,6 +12,7 @@ protocol Endpoint {
     var baseURL: String { get }
     var path: String { get }
     var parameters: [String: Any]? { get }
+    var requestType: RequestType { get }
 }
 
 extension Endpoint {
