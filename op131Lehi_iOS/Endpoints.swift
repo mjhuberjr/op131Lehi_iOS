@@ -37,10 +37,10 @@ enum Endpoints: Endpoint {
         var parameters: JSONType? {
             switch self {
             case .messages(let username):
-                var parameters: JSONType = [
+                let parameters: JSONType = [
                     Keys.username: username]
                 return parameters
-            default: return nil
+            case .register, .update, .login, .logout: return nil
             }
         }
 
@@ -50,11 +50,41 @@ enum Endpoints: Endpoint {
 
     case Messages(MessagesEndpoint)
 
+    enum MessagesEndpoint: Endpoint {
+        case fetchAll
+        case fetch(messageID: Int)
+        case post
+        case update
+        case delete
+
+        var baseURL: String {
+            return "https:op131.com/op131Lehi/messages"
+        }
+
+        var path: String {
+            switch self {
+            case .fetchAll, .fetch, .post, .update, .delete: return "/"
+            }
+        }
+
+        var parameters: JSONType? {
+            switch self {
+            case .fetch(let messageID):
+                let parameters: JSONType = [
+                    Keys.messageID: messageID]
+                return parameters
+            case .fetchAll, .post, .update, .delete: return nil
+            }
+        }
+    }
+
     // MARK: - Endpoints Endpoint
 
     var baseURL: String {
         switch self {
         case .Users(let endpoint):
+            return endpoint.baseURL
+        case .Messages(let endpoint):
             return endpoint.baseURL
         }
     }
@@ -63,12 +93,16 @@ enum Endpoints: Endpoint {
         switch self {
         case .Users(let endpoint):
             return endpoint.path
+        case .Messages(let endpoint):
+            return endpoint.path
         }
     }
 
     var parameters: JSONType? {
         switch self {
-        case.Users(let endpoint):
+        case .Users(let endpoint):
+            return endpoint.parameters
+        case .Messages(let endpoint):
             return endpoint.parameters
         }
     }

@@ -14,4 +14,8 @@ enum Keys {
 
     static let username = "username"
 
+    // MARK: - Message Keys
+    
+    static let messageID = "id"
+
 }
