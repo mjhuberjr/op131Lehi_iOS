@@ -8,11 +8,11 @@
 
 import Foundation
 
-typealias JSON = [String: Any]
+typealias JSONType = [String: Any]
 
 protocol JSONDecodable {
     associatedtype DataType
 
-    init?(JSON: JSON)
-    func json(fromData data: DataType) -> JSON
+    init?(JSON: JSONType)
+    func json(fromData data: DataType) -> JSONType
 }

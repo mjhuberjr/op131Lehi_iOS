@@ -14,6 +14,7 @@
 		5E1E107A1E765EF500D12671 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E10791E765EF500D12671 /* Profile.swift */; };
 		5E1E107C1E765F0000D12671 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E107B1E765F0000D12671 /* Message.swift */; };
 		5E1E107E1E765F2600D12671 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E107D1E765F2600D12671 /* Endpoints.swift */; };
+		5E1E10801E76FAD500D12671 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E107F1E76FAD500D12671 /* Keys.swift */; };
 		5E7339AF1E74B26200C8A44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7339AE1E74B26200C8A44A /* AppDelegate.swift */; };
 		5E7339B41E74B26200C8A44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7339B21E74B26200C8A44A /* Main.storyboard */; };
 		5E7339B61E74B26200C8A44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7339B51E74B26200C8A44A /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		5E1E10791E765EF500D12671 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		5E1E107B1E765F0000D12671 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		5E1E107D1E765F2600D12671 /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		5E1E107F1E76FAD500D12671 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		5E7339AB1E74B26200C8A44A /* op131Lehi_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = op131Lehi_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7339AE1E74B26200C8A44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E7339B31E74B26200C8A44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				5E7339B51E74B26200C8A44A /* Assets.xcassets */,
 				5E7339BA1E74B26200C8A44A /* Info.plist */,
+				5E1E107F1E76FAD500D12671 /* Keys.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				5E7339AF1E74B26200C8A44A /* AppDelegate.swift in Sources */,
 				5E7339D11E74C51D00C8A44A /* UIColor+Extension.swift in Sources */,
 				5E1E107E1E765F2600D12671 /* Endpoints.swift in Sources */,
+				5E1E10801E76FAD500D12671 /* Keys.swift in Sources */,
 				5E7339DD1E74CCDA00C8A44A /* Loading.swift in Sources */,
 				5E1E10701E75EEA900D12671 /* Network.swift in Sources */,
 				5E7339EA1E74CFFF00C8A44A /* CreateProfile.swift in Sources */,
