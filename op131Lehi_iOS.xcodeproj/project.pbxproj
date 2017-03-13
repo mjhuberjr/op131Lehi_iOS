@@ -15,6 +15,8 @@
 		5E1E107C1E765F0000D12671 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E107B1E765F0000D12671 /* Message.swift */; };
 		5E1E107E1E765F2600D12671 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E107D1E765F2600D12671 /* Endpoints.swift */; };
 		5E1E10801E76FAD500D12671 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E107F1E76FAD500D12671 /* Keys.swift */; };
+		5E1E10821E7736D300D12671 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E10811E7736D300D12671 /* ProfileService.swift */; };
+		5E1E10841E77371400D12671 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E10831E77371300D12671 /* Client.swift */; };
 		5E7339AF1E74B26200C8A44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7339AE1E74B26200C8A44A /* AppDelegate.swift */; };
 		5E7339B41E74B26200C8A44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7339B21E74B26200C8A44A /* Main.storyboard */; };
 		5E7339B61E74B26200C8A44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7339B51E74B26200C8A44A /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		5E1E107B1E765F0000D12671 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		5E1E107D1E765F2600D12671 /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		5E1E107F1E76FAD500D12671 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		5E1E10811E7736D300D12671 /* ProfileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		5E1E10831E77371300D12671 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		5E7339AB1E74B26200C8A44A /* op131Lehi_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = op131Lehi_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7339AE1E74B26200C8A44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E7339B31E74B26200C8A44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 				5E1E10711E75FCF000D12671 /* Endpoint.swift */,
 				5E1E10731E76575D00D12671 /* Result.swift */,
 				5E1E10751E765C2700D12671 /* JSONDecodable.swift */,
+				5E1E10831E77371300D12671 /* Client.swift */,
 			);
 			name = NetworkStack;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				5E7339CE1E74C43D00C8A44A /* AppearanceService.swift */,
+				5E1E10811E7736D300D12671 /* ProfileService.swift */,
 				5E7339CC1E74C42F00C8A44A /* SettingsService.swift */,
 			);
 			name = Services;
@@ -374,9 +380,11 @@
 				5E7339CD1E74C42F00C8A44A /* SettingsService.swift in Sources */,
 				5E1E10761E765C2700D12671 /* JSONDecodable.swift in Sources */,
 				5E7339E61E74CDF800C8A44A /* Login.swift in Sources */,
+				5E1E10821E7736D300D12671 /* ProfileService.swift in Sources */,
 				5E7339E01E74CD9600C8A44A /* MainApp.swift in Sources */,
 				5E1E107C1E765F0000D12671 /* Message.swift in Sources */,
 				5E1E10721E75FCF000D12671 /* Endpoint.swift in Sources */,
+				5E1E10841E77371400D12671 /* Client.swift in Sources */,
 				5E7339CA1E74BC3100C8A44A /* StoryboardInitializable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
