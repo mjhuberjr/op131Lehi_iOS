@@ -12,7 +12,15 @@ enum Keys {
 
     // MARK: - Profile Keys
 
+    static let lehiUserDatabase = "lehiusers"
+    static let lehiUserID = "id"
+    static let givenName = "givenName"
+    static let surname = "surname"
     static let username = "username"
+    static let password = "password"
+    static let imagePath = "imagePath"
+    static let image = "image"
+    static let accesstoken = "access_token"
 
     // MARK: - Message Keys
     

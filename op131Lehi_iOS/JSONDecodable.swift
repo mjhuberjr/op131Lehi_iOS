@@ -13,6 +13,6 @@ typealias JSONType = [String: Any]
 protocol JSONDecodable {
     associatedtype DataType
 
-    init?(JSON: JSONType)
+    init?(json: JSONType)
     func json(fromData data: DataType) -> JSONType
 }
