@@ -15,8 +15,10 @@ enum FetchRequest {
 }
 
 protocol Client {
-    func fetch(_ endpoint: Endpoint, request: FetchRequest)
-    func post(_ endpoint: Endpoint, using data: JSONType)
-    func update(_ endpoint: Endpoint, data: JSONType, withNewData: JSONType)
-    func delete(_ endpoint: Endpoint, object: JSONType)
+    associatedtype EndpointType: Endpoint
+
+    func fetch(_ endpoint: EndpointType)
+    func post(_ endpoint: EndpointType)
+    func update(_ endpoint: EndpointType)
+    func delete(_ endpoint: EndpointType)
 }

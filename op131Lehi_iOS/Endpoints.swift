@@ -78,7 +78,7 @@ enum Endpoints: Endpoint {
             switch self {
             case .fetch(let messageID):
                 let parameters: JSONType = [
-                    Keys.messageID: messageID]
+                    Keys.messageID: String(messageID)]
                 return parameters
             case .fetchAll, .post, .update, .delete: return nil
             }

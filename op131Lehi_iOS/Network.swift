@@ -16,7 +16,7 @@ enum RequestType: String {
     case delete = "DELETE"
 }
 
-class NetworkController {
+class Network {
 
     static func performRequest(for url: URL,
                                httpMethod: RequestType,
